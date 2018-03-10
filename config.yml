@@ -1,0 +1,522 @@
+factions:
+  - 莫寒
+  - 冯薪朵
+  - 陆婷
+  - 赵粤
+  - 张语格
+  - 许佳琪
+  - 戴萌
+  - 段艺璇
+  - 马鹿
+  - 戴莫
+  - 七五
+  - 呆驼
+
+# Projects index: https://me.modian.com/user?type=index&id={uid}
+modian:
+  # https://me.modian.com/user?type=index&id=990040
+  - faction: 莫寒
+    name: Liknight
+    uid: 990040
+    project_ids:
+      # 摩点：莫寒应援会第五届总选举众筹新春测试版
+      # https://zhongchou.modian.com/item/10660.html
+      - 10660
+      # 摩点：【总选】SNH48-莫寒应援会三月日常打卡1.0 BN
+      # https://zhongchou.modian.com/item/11731.html
+      - 11731
+    irrelevant_project_ids:
+      # 摩点：SNH莫寒应援会第五届总选举红白歌会专项
+      # https://zhongchou.modian.com/item/11225.html
+      - 11225
+
+  # https://me.modian.com/user?type=index&id=991486
+  - faction: 冯薪朵
+    name: 冯薪朵应援团
+    uid: 991486
+    project_ids:
+      # 摩点：五选应援计划之生日预热
+      # https://zhongchou.modian.com/item/10833.html
+      - 10833
+      # 摩点：【五选应援】SNH48冯薪朵五选日常打卡
+      # https://zhongchou.modian.com/item/11144.html
+      - 11144
+      # 摩点：【五选情人节企划】SNH48冯薪朵之《恋与FXD》
+      # https://zhongchou.modian.com/item/11273.html
+      - 11273
+      # 摩点：【五选应援】SNH48冯薪朵五选日常打卡2.0
+      # https://zhongchou.modian.com/item/11520.html
+      - 11520
+      # 摩点：【总选活动BN】SNH48冯薪朵三月活动链接
+      # https://zhongchou.modian.com/item/11901.html
+      - 11901
+    irrelevant_project_ids:
+      # 摩点：2015年SNH48总选举——TeamNⅡ冯薪朵总选众筹计划
+      # https://zhongchou.modian.com/item/924.html
+      - 924
+      # 摩点：2016年SNH48第三届总选举“比翼齐飞”冯薪朵总选众筹
+      # https://zhongchou.modian.com/item/3123.html
+      - 3123
+
+  # https://me.modian.com/user?type=index&id=986991
+  - faction: 陆婷
+    name: 陆婷应援会
+    uid: 986991
+    project_ids:
+      # 摩点：SNH48-陆婷应援会 情人节表白 打卡
+      # https://zhongchou.modian.com/item/10793.html
+      - 10793
+      # 摩点：SNH48陆婷应援会-总选日常打卡
+      # https://zhongchou.modian.com/item/11358.html
+      - 11358
+      # 摩点：三日限定旅行小鹿-SNH48-陆婷应援会总选日常应援
+      # https://zhongchou.modian.com/item/11656.html
+      - 11656
+    irrelevant_project_ids:
+      # 摩点：2016年SNH48第三届总选举—陆婷总选粉丝应援计划
+      # https://zhongchou.modian.com/item/3035.html
+      - 3035
+
+  # https://me.modian.com/user?type=index&id=983059
+  - faction: 赵粤
+    name: SNH48赵粤应援会
+    uid: 983059
+    project_ids:
+      # 摩点：【赵粤】【总选】赵粤应援会2018年一月日常应援
+      # https://zhongchou.modian.com/item/10560.html
+      - 10560
+      # 摩点：【赵粤】【总选】赵粤应援会2018年二月日常集资
+      # https://zhongchou.modian.com/item/10987.html
+      - 10987
+      # 摩点：【赵粤】2018年赵粤生日应援集资  总选
+      # https://zhongchou.modian.com/item/11470.html
+      - 11470
+      # 摩点：【赵粤】【总选】粤母的特别元宵
+      # https://zhongchou.modian.com/item/11761.html
+      - 11761
+      # 摩点：【赵粤】【总选】赵粤应援会2018年三月日常集资
+      # https://zhongchou.modian.com/item/11852.html
+      - 11852
+    irrelevant_project_ids:
+      # 摩点：2015年SNH48第二届总选举—赵粤总选粉丝应援计划
+      # https://zhongchou.modian.com/item/794.html
+      - 794
+      # 摩点：2016年SNH48总选举—赵粤众筹应援企划
+      # https://zhongchou.modian.com/item/1854.html
+      - 1854
+
+  # https://me.modian.com/user?type=index&id=1157969
+  - faction: 张语格
+    name: SNH48张语格应援团
+    uid: 1157969
+    project_ids:
+      # 摩点：向【张语格】情人节表白 SNH48第5届总选摩点众筹
+      # https://zhongchou.modian.com/item/10787.html
+      - 10787
+      # 摩点：标题【张语格】总选新春活动投票
+      # https://zhongchou.modian.com/item/11208.html
+      - 11208
+      # 摩点：【张语格】2018年“迎财神”总选特别集资
+      # https://zhongchou.modian.com/item/11480.html
+      - 11480
+      # 摩点：【张语格】22岁生日应援 总选众筹
+      # https://zhongchou.modian.com/item/11651.html
+      - 11651
+      # 摩点：【张语格】冲！第五届总选日常集资
+      # https://zhongchou.modian.com/item/11822.html
+      - 11822
+    irrelevant_project_ids:
+
+  # https://me.modian.com/user?type=index&id=1067442
+  - faction: 许佳琪
+    name: SNH48许佳琪应援会
+    uid: 1067442
+    project_ids:
+      # 摩点：SNH48-许佳琪应援会 第5届总选日常集资链接
+      # https://zhongchou.modian.com/item/11031.html
+      - 11031
+      # 摩点：【总选】SNH48-许佳琪 红白歌会
+      # https://zhongchou.modian.com/item/11222.html
+      - 11222
+      # 摩点：【总选】SNH48许佳琪应援会5选-3月启动号
+      # https://zhongchou.modian.com/item/11689.html
+      - 11689
+      # 摩点：【总选】许佳琪应援会「你理想中的企琪体重」150斤
+      # https://zhongchou.modian.com/item/12059.html
+      - 12059
+      # 摩点：【总选】许佳琪应援会-你理想中的企琪体重：95斤篇
+      # https://zhongchou.modian.com/item/12060.html
+      - 12060
+    irrelevant_project_ids:
+      # 摩点：许佳琪应援会-SNH48第三届总选举许佳琪应援企划
+      # https://zhongchou.modian.com/item/2074.html
+      - 2074
+
+  # https://me.modian.com/user?type=index&id=991407
+  - faction: 戴萌
+    name: SNH48戴萌应援会
+    uid: 991407
+    project_ids:
+      # 摩点：【戴萌】2018年生日集资1.0 总选
+      # https://zhongchou.modian.com/item/10485.html
+      - 10485
+      # 摩点：【戴萌】2018年生日集资2.0 总选
+      # https://zhongchou.modian.com/item/10577.html
+      - 10577
+      # 摩点：【戴萌】2018年生日集资3.0 总选
+      # https://zhongchou.modian.com/item/10675.html
+      - 10675
+      # 摩点：【戴萌】2018年生日集资4.0 总选
+      # https://zhongchou.modian.com/item/10753.html
+      - 10753
+      # 摩点：【戴萌】2018年生日集资5.0 总选
+      # https://zhongchou.modian.com/item/10871.html
+      - 10871
+      # 摩点：【戴萌】2018年生日集资6.0 总选
+      # https://zhongchou.modian.com/item/11028.html
+      - 11028
+      # 摩点：【戴萌】2018生日集资7.0 总选
+      # https://zhongchou.modian.com/item/11173.html
+      - 11173
+      # 摩点：【戴萌】2018生日集资8.0 总选
+      # https://zhongchou.modian.com/item/11565.html
+      - 11565
+      # 摩点：【戴萌】2018年生日集资FINAL
+      # https://zhongchou.modian.com/item/12208.html
+      - 12208
+    irrelevant_project_ids:
+      # 摩点：【总选萌动力】2016年SNH48 Team SII 戴萌第三届总选举众筹计划
+      # https://zhongchou.modian.com/item/3154.html
+      - 3154
+
+  # https://me.modian.com/user?type=index&id=1126614
+  - faction: 段艺璇
+    name: BEJ48段艺璇应援会
+    uid: 1126614
+    project_ids:
+      # 摩点：BEJ48段艺璇第五届总选日常集资
+      # https://zhongchou.modian.com/item/10889.html
+      - 10889
+      # 摩点：BEJ48段艺璇第四届总选应援新年红包活动
+      # https://zhongchou.modian.com/item/11401.html
+      - 11401
+      # 摩点：BEJ48段艺璇应援会第五届总选新年活动
+      # https://zhongchou.modian.com/item/11404.html
+      - 11404
+      # 摩点：BEJ48段艺璇应援会五选24小时限时集资
+      # https://zhongchou.modian.com/item/11598.html
+      - 11598
+      # 摩点：【BEJ48段艺璇】第五届总选3月日常集资
+      # https://zhongchou.modian.com/item/11747.html
+      - 11747
+      # 摩点：BEJ48段艺璇应援会总选集资《妙偶天成》篇
+      # https://zhongchou.modian.com/item/11772.html
+      - 11772
+    irrelevant_project_ids:
+
+  # https://me.modian.com/user?type=index&id=1180540
+  - faction: 马鹿
+    name: SNH48马鹿应援会
+    uid: 1180540
+    project_ids:
+      # 摩点：马鹿应援会第五届总选日常集资
+      # https://zhongchou.modian.com/item/10362.html
+      - 10362
+      # 摩点：马鹿应援会第五届总选一月日常集资
+      # https://zhongchou.modian.com/item/10551.html
+      - 10551
+      # 摩点：马鹿应援会第五届总选日常集资
+      # https://zhongchou.modian.com/item/10997.html
+      - 10997
+    irrelevant_project_ids:
+
+  # https://me.modian.com/user?type=index&id=1294888
+  - faction: 戴莫
+    name: SNH48戴莫应援会
+    uid: 1294888
+    project_ids:
+    irrelevant_project_ids:
+
+  # https://me.modian.com/user?type=index&id=1078403
+  - faction: 七五
+    name: SNH48-75折应援会
+    uid: 1078403
+    project_ids:
+      # 摩点：【七五折】SNH48第五届总选举应援
+      # https://zhongchou.modian.com/item/11078.html
+      - 11078
+      # 摩点：【七五折】SNH48第五届总选举应援2.0
+      # https://zhongchou.modian.com/item/11751.html
+      - 11751
+      # 摩点：七五折应援会攻受pk-互攻
+      # https://zhongchou.modian.com/item/12191.html
+      - 12191
+      # 摩点：七五折应援会攻受pk-哲攻
+      # https://zhongchou.modian.com/item/12192.html
+      - 12192
+      # 摩点：七五折应援会攻受pk-ki攻
+      # https://zhongchou.modian.com/item/12193.html
+      - 12193
+    irrelevant_project_ids:
+
+  # https://me.modian.com/user?type=index&id=1191691
+  - faction: 呆驼
+    name: SNH48呆驼应援会
+    uid: 1191691
+    project_ids:
+      # 摩点：【总选】2018年春节限定——呆驼小超市
+      # https://zhongchou.modian.com/item/11214.html
+      - 11214
+    irrelevant_project_ids:
+
+# Projects index: https://owhat.cn/stars/fansclub.html?clubid={uid}
+owhat:
+  # https://owhat.cn/stars/fansclub.html?clubid=1382289
+  - faction: 冯薪朵
+    name: SNH48-冯薪朵应援团
+    uid: 1382289
+    project_ids:
+    irrelevant_project_ids:
+      # Owhat：SNH48冯薪朵第三届年度金曲大赏应援计划
+      # https://www.owhat.cn/shop/supportdetail.html?id=7749
+      - 7749
+
+  # https://owhat.cn/stars/fansclub.html?clubid=678480
+  - faction: 陆婷
+    name: SNH48-陆婷应援会
+    uid: 678480
+    project_ids:
+      # Owhat：SNH48陆婷应援会-2018日常应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=32655
+      - 32655
+      # Owhat：SNH48陆婷2017生诞祭应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=27695
+      - 27695
+    irrelevant_project_ids:
+      # Owhat：【陆战记】解锁活动
+      # https://www.owhat.cn/shop/supportdetail.html?id=16092
+      - 16092
+      # Owhat：给陆婷的健身卡
+      # https://www.owhat.cn/shop/supportdetail.html?id=15247
+      - 15247
+      # Owhat：拯救陆婷出笼行动
+      # https://www.owhat.cn/shop/supportdetail.html?id=14794
+      - 14794
+      # Owhat：陆婷应援会白色情人节活动【为鹿司仪爆灯】
+      # https://www.owhat.cn/shop/supportdetail.html?id=14718
+      - 14718
+      # Owhat：陆婷应援会白色情人节活动【给小鹿天使的玫瑰】
+      # https://www.owhat.cn/shop/supportdetail.html?id=14719
+      - 14719
+      # Owhat：陆婷应援会常规应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=12003
+      - 12003
+      # Owhat：SNH48陆婷2016生诞祭应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=9040
+      - 9040
+      # Owhat：【风尚大赏】为时尚小公主陆婷点赞加冕
+      # https://www.owhat.cn/shop/supportdetail.html?id=8336
+      - 8336
+      # Owhat：【金曲大赏】爱我还是她——陆婷应援会万圣节特别活动
+      # https://www.owhat.cn/shop/supportdetail.html?id=8159
+      - 8159
+
+  # https://owhat.cn/stars/fansclub.html?clubid=2004028
+  - faction: 赵粤
+    name: SNH48-赵粤应援会
+    uid: 2004028
+    project_ids:
+    irrelevant_project_ids:
+
+  # https://owhat.cn/stars/fansclub.html?clubid=691722
+  - faction: 张语格
+    name: SNH48-张语格应援团
+    uid: 691722
+    project_ids:
+      # Owhat：张语格应援团日常应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=27888
+      - 27888
+    irrelevant_project_ids:
+      # Owhat：唐宇，放学别走
+      # https://www.owhat.cn/shop/supportdetail.html?id=25844
+      - 25844
+      # Owhat：张语格剧场日常应援应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=25501
+      - 25501
+      # Owhat：张语格贴身校花2路演应援第二弹
+      # https://www.owhat.cn/shop/supportdetail.html?id=24491
+      - 24491
+      # Owhat：张语格贴身校花2路演应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=23665
+      - 23665
+      # Owhat：张语格TOP16巡演应援应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=22402
+      - 22402
+      # Owhat：张语格应援团2017下半年日常应援应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=21404
+      - 21404
+      # Owhat：张语格四选应援七月号——冲刺！最后一月！
+      # https://www.owhat.cn/shop/supportdetail.html?id=19204
+      - 19204
+      # Owhat：张语格四选应援六月号——目标，神七！
+      # https://www.owhat.cn/shop/supportdetail.html?id=17722
+      - 17722
+      # Owhat：张语格四选应援五月号
+      # https://www.owhat.cn/shop/supportdetail.html?id=16637
+      - 16637
+      # Owhat：张语格四选应援四月号
+      # https://www.owhat.cn/shop/supportdetail.html?id=15534
+      - 15534
+      # Owhat：张语格四选应援三月号
+      # https://www.owhat.cn/shop/supportdetail.html?id=14716
+      - 14716
+      # Owhat：张语格应援团爱乐融聆听公益慈善捐款
+      # https://www.owhat.cn/shop/supportdetail.html?id=13716
+      - 13716
+      # Owhat：SNH48-张语格 贺岁喜剧《十全九美》探班应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=10306
+      - 10306
+      # Owhat：SNH48-张语格BEST50金曲大赏第二轮应援应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=8157
+      - 8157
+      # Owhat：SNH48-张语格BEST30金曲大赏应援应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=7021
+      - 7021
+      # Owhat：奋力一搏 清仓10万！SNH48-张语格第三届总选举应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=3862
+      - 3862
+      # Owhat：冲刺！SNH48-张语格第三届总选举应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=3717
+      - 3717
+      # Owhat：SNH48-张语格第三届总选举第四轮应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=2883
+      - 2883
+      # Owhat：SNH48张语格贴身校花首播应援满补活动
+      # https://www.owhat.cn/shop/supportdetail.html?id=2827
+      - 2827
+      # Owhat：SNH-48张语格第三届总选举第三轮应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=2547
+      - 2547
+      # Owhat：SNH48-张语格第三届总选举粉丝应援第二轮应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=1925
+      - 1925
+      # Owhat：SNH48-张语格第三届总选举应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=939
+      - 939
+
+  # https://owhat.cn/stars/fansclub.html?clubid=626025
+  - faction: 马鹿
+    name: SNH48-马鹿应援会
+    uid: 626025
+    project_ids:
+    irrelevant_project_ids:
+      # Owhat：打败金曲大魔王之寻找装（周）备（边）
+      # https://www.owhat.cn/shop/supportdetail.html?id=24827
+      - 24827
+      # Owhat：每日打卡！冲刺MV
+      # https://www.owhat.cn/shop/supportdetail.html?id=21272
+      - 21272
+      # Owhat：为了马鹿的9999件事之八月日常
+      # https://www.owhat.cn/shop/supportdetail.html?id=21139
+      - 21139
+      # Owhat：马鹿红白合照对决——第四轮
+      # https://www.owhat.cn/shop/supportdetail.html?id=20291
+      - 20291
+      # Owhat：马鹿红白合照pk——第三轮
+      # https://www.owhat.cn/shop/supportdetail.html?id=20140
+      - 20140
+      # Owhat：马鹿红白合照pk——第二轮
+      # https://www.owhat.cn/shop/supportdetail.html?id=20091
+      - 20091
+      # Owhat：马鹿红白合照pk——第一轮
+      # https://www.owhat.cn/shop/supportdetail.html?id=20033
+      - 20033
+      # Owhat：祝我们最爱的马鹿，中报快乐！
+      # https://www.owhat.cn/shop/supportdetail.html?id=19481
+      - 19481
+      # Owhat：情话PK之马鹿教你说情话
+      # https://www.owhat.cn/shop/supportdetail.html?id=19369
+      - 19369
+      # Owhat：马鹿的9999件事之320KTV
+      # https://www.owhat.cn/shop/supportdetail.html?id=18960
+      - 18960
+      # Owhat：马鹿电影院 她们系列之泡芙与蛋糕
+      # https://www.owhat.cn/shop/supportdetail.html?id=18740
+      - 18740
+      # Owhat：亮龙VS放狗 攻受由你决定！
+      # https://www.owhat.cn/shop/supportdetail.html?id=18630
+      - 18630
+      # Owhat：马鹿电影院 她们系列之醋王争霸战
+      # https://www.owhat.cn/shop/supportdetail.html?id=18576
+      - 18576
+      # Owhat：马鹿电影院 她们系列之Frist time
+      # https://www.owhat.cn/shop/supportdetail.html?id=18416
+      - 18416
+      # Owhat：纳豆的儿童节礼物
+      # https://www.owhat.cn/shop/supportdetail.html?id=17793
+      - 17793
+      # Owhat：马鹿应援会 星球之旅5.0
+      # https://www.owhat.cn/shop/supportdetail.html?id=16926
+      - 16926
+      # Owhat：马鹿应援会 星球之旅4.0
+      # https://www.owhat.cn/shop/supportdetail.html?id=16699
+      - 16699
+      # Owhat：马鹿应援会 星球之旅3.0
+      # https://www.owhat.cn/shop/supportdetail.html?id=16418
+      - 16418
+      # Owhat：马鹿应援会 星球之旅2.0
+      # https://www.owhat.cn/shop/supportdetail.html?id=16245
+      - 16245
+      # Owhat：马鹿应援会 星球之旅——启程
+      # https://www.owhat.cn/shop/supportdetail.html?id=16022
+      - 16022
+      # Owhat：马鹿生诞应援
+      # https://www.owhat.cn/shop/supportdetail.html?id=10209
+      - 10209
+      # Owhat：SNH48第三届总决选——马鹿应援会最后的冲刺
+      # https://www.owhat.cn/shop/supportdetail.html?id=3317
+      - 3317
+
+  # https://owhat.cn/stars/fansclub.html?clubid=849532
+  - faction: 戴莫
+    name: SNH48戴莫应援会
+    uid: 849532
+    project_ids:
+      # Owhat：戴莫应援会日常打卡
+      # https://www.owhat.cn/shop/supportdetail.html?id=30221
+      - 30221
+    irrelevant_project_ids:
+      # Owhat：戴莫应援会 金曲大赏 长期链接
+      # https://www.owhat.cn/shop/supportdetail.html?id=21159
+      - 21159
+      # Owhat：戴莫应援会长期链接
+      # https://www.owhat.cn/shop/supportdetail.html?id=13695
+      - 13695
+      # Owhat：2017戴莫应援会生日弹幕
+      # https://www.owhat.cn/shop/supportdetail.html?id=11174
+      - 11174
+      # Owhat：戴莫生日弹幕title一日限定
+      # https://www.owhat.cn/shop/supportdetail.html?id=12240
+      - 12240
+
+  # https://owhat.cn/stars/fansclub.html?clubid=1517247
+  - faction: 七五
+    name: SNH48-75折应援会
+    uid: 1517247
+    project_ids:
+    irrelevant_project_ids:
+      # Owhat：奖励运费补拍
+      # https://www.owhat.cn/shop/supportdetail.html?id=19124
+      - 19124
+
+  # https://owhat.cn/stars/fansclub.html?clubid=2090590
+  - faction: 呆驼
+    name: SNH48-呆驼应援会
+    uid: 2090590
+    project_ids:
+    irrelevant_project_ids:
+      # Owhat：农药友谊对抗赛
+      # https://www.owhat.cn/shop/supportdetail.html?id=19240
+      - 19240
+
+datadir: data
