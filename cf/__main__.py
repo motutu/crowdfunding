@@ -3,6 +3,7 @@ import collections
 import textwrap
 import time
 
+import arrow
 import jinja2
 
 from . import config
@@ -67,29 +68,37 @@ def crawl_projects():
     faction_projects = collections.defaultdict(list)
     for faction, project in utils.pool_starmap(_project_overview, project_overview_args):
         faction_projects[faction].append(project)
-    return [(faction, faction_projects[faction]) for faction in config.factions()]
+    return [
+        dict(
+            faction=faction,
+            projects=faction_projects[faction],
+            total=sum(p.amount for p in faction_projects[faction]),
+        ) for faction in config.factions()
+    ]
 
 
 _REPORT_TEMPLATE = jinja2.Template('''\
-{% for faction, projects in data -%}
-{{ faction }}
-  总计: ￥{{ '%.2f'|format(projects|sum(attribute='amount')) }}
+统计时间: {{ datetime.replace(microsecond=0).isoformat() }}
 
-{%- for project in projects %}
+{% for entry in data -%}
+{{ entry.faction }}
+  总计: ￥{{ '%.2f'|format(entry.total) }}
+
+{%- for project in entry.projects %}
 
   {{ project|string|trim|indent(2) }}
 {%- endfor %}
 
 {% endfor -%}
 小结
-{%- for faction, projects in data %}
-{{ faction }}\t￥{{ '%.2f'|format(projects|sum(attribute='amount')) }}
+{%- for entry in data %}
+{{ entry.faction }}\t￥{{ '%.2f'|format(entry.total) }}
 {%- endfor %}
 ''')
 
 
-def projects_report(data):
-    return _REPORT_TEMPLATE.render(data=data)
+def projects_report(datetime, data):
+    return _REPORT_TEMPLATE.render(datetime=datetime, data=data)
 
 
 def newprojects_handler(args):
@@ -97,7 +106,8 @@ def newprojects_handler(args):
 
 
 def crawl_handler(args):
-    timestamp_ms = int(time.time() * 1000)
+    now = arrow.now().to('Asia/Shanghai')
+    timestamp_ms = int(now.float_timestamp * 1000)
 
     data = crawl_projects()
 
@@ -107,9 +117,10 @@ def crawl_handler(args):
     json_reports_dir.mkdir(exist_ok=True, parents=True)
     text_reports_dir.mkdir(exist_ok=True, parents=True)
 
-    utils.dump_json(data, json_reports_dir / f'{timestamp_ms}.json')
+    utils.dump_json(collections.OrderedDict([('timestamp', timestamp_ms), ('data', data)]),
+                    json_reports_dir / f'{timestamp_ms}.json')
 
-    report = projects_report(data)
+    report = projects_report(now, data)
     with open(text_reports_dir / f'{timestamp_ms}.txt', 'w', encoding='utf-8') as fp:
         print(report, file=fp)
 
