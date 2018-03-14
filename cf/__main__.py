@@ -1,9 +1,11 @@
 import argparse
 import collections
+import json
 import textwrap
 import time
 
 import arrow
+import attrdict
 import jinja2
 
 from . import config
@@ -101,6 +103,30 @@ def projects_report(datetime, data):
     return _REPORT_TEMPLATE.render(datetime=datetime, data=data)
 
 
+COMPARISON_REPORT_TEMPLATE = jinja2.Template('''\
+{{ time1.replace(microsecond=0).isoformat() }} → {{ time2.replace(microsecond=0).isoformat() }}
+{% for faction, total1, total2 in entries -%}
+{{ faction }}\t￥{{ '%.2f'|format(total1) }} → {{ '%.2f'|format(total2) }} ({{ '%+.2f'|format(total2 - total1) }})
+{% endfor -%}
+''')
+
+
+def compare(report1, report2):
+    with open(report1) as fp:
+        obj1 = attrdict.AttrDict(json.load(fp))
+    with open(report2) as fp:
+        obj2 = attrdict.AttrDict(json.load(fp))
+    t1 = arrow.get(obj1.timestamp / 1000).to('Asia/Shanghai')
+    t2 = arrow.get(obj2.timestamp / 1000).to('Asia/Shanghai')
+    data1 = attrdict.AttrDict({e.faction: e for e in obj1.data})
+    data2 = attrdict.AttrDict({e.faction: e for e in obj2.data})
+    report = COMPARISON_REPORT_TEMPLATE.render(
+        time1=t1, time2=t2,
+        entries=[(faction, data1[faction].total, data2[faction].total) for faction in config.factions()],
+    )
+    print(report, end='')
+
+
 def newprojects_handler(args):
     fetch_new_projects()
 
@@ -127,6 +153,11 @@ def crawl_handler(args):
     print(report)
 
 
+def compare_handler(args):
+    reports = sorted(config.datadir().joinpath('reports/json').glob('*.json'))
+    compare(reports[-2], reports[-1])
+
+
 def main():
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers()
@@ -136,6 +167,9 @@ def main():
 
     parser_crawl = subparsers.add_parser('crawl', help='crawl for stats of tracked projects')
     parser_crawl.set_defaults(handler=crawl_handler)
+
+    parser_compare = subparsers.add_parser('compare', help='compare data at two different points in time')
+    parser_compare.set_defaults(handler=compare_handler)
 
     args = parser.parse_args()
 
