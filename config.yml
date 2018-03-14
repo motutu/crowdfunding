@@ -72,6 +72,12 @@ modian:
       # 摩点：三日限定旅行小鹿-SNH48-陆婷应援会总选日常应援
       # https://zhongchou.modian.com/item/11656.html
       - 11656
+      # 摩点：SNH48-陆婷应援会-白色情人节总选限定企划红方
+      # https://zhongchou.modian.com/item/12400.html
+      - 12400
+      # 摩点：SNH48-陆婷应援会-白色情人节总选限定企划白方
+      # https://zhongchou.modian.com/item/12401.html
+      - 12401
     irrelevant_project_ids:
       # 摩点：2016年SNH48第三届总选举—陆婷总选粉丝应援计划
       # https://zhongchou.modian.com/item/3035.html
@@ -215,6 +221,9 @@ modian:
       # 摩点：BEJ48段艺璇应援会总选集资《妙偶天成》篇
       # https://zhongchou.modian.com/item/11772.html
       - 11772
+      # 摩点：白色情人节跟段哥兜风之总选限定集资
+      # https://zhongchou.modian.com/item/12397.html
+      - 12397
     irrelevant_project_ids:
 
   # https://me.modian.com/user?type=index&id=1180540
