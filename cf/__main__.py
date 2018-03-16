@@ -80,7 +80,7 @@ def crawl_projects():
 
 
 _REPORT_TEMPLATE = jinja2.Template('''\
-统计时间: {{ datetime.replace(microsecond=0).isoformat() }}
+统计时间: {{ datetime.replace(microsecond=0).strftime('%Y-%m-%d %H:%M:%S') }}
 
 {% for entry in data -%}
 {{ entry.faction }}
@@ -104,7 +104,7 @@ def projects_report(datetime, data):
 
 
 COMPARISON_REPORT_TEMPLATE = jinja2.Template('''\
-{{ time1.replace(microsecond=0).isoformat() }} → {{ time2.replace(microsecond=0).isoformat() }}
+{{ time1.replace(microsecond=0).strftime('%Y-%m-%d %H:%M:%S') }} → {{ time2.replace(microsecond=0).strftime('%Y-%m-%d %H:%M:%S') }}
 {% for faction, total1, total2 in entries -%}
 {{ faction }}\t￥{{ '%.2f'|format(total1) }} → {{ '%.2f'|format(total2) }} ({{ '%+.2f'|format(total2 - total1) }})
 {% endfor -%}
@@ -131,7 +131,7 @@ def list_timestamps():
     timestamps = sorted(int(path.stem) for path in config.datadir().joinpath('reports/json').glob('*.json'))
     for timestamp in timestamps:
         dt = arrow.get(timestamp / 1000).to('Asia/Shanghai').replace(microsecond=0)
-        print(f'{timestamp}\t{dt.isoformat()}')
+        print(f'{timestamp}\t{dt.strftime("%Y-%m-%d %H:%M:%S")}')
 
 
 def newprojects_handler(args):
