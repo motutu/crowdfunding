@@ -193,6 +193,9 @@ modian:
       # 摩点：【戴萌】2018年生日集资FINAL 总选
       # https://zhongchou.modian.com/item/12278.html
       - 12278
+      # 摩点：【戴萌】第五届总选日常第一弹
+      # https://zhongchou.modian.com/item/12537.html
+      - 12537
     irrelevant_project_ids:
       # 摩点：【总选萌动力】2016年SNH48 Team SII 戴萌第三届总选举众筹计划
       # https://zhongchou.modian.com/item/3154.html
@@ -224,6 +227,9 @@ modian:
       # 摩点：白色情人节跟段哥兜风之总选限定集资
       # https://zhongchou.modian.com/item/12397.html
       - 12397
+      # 摩点：【BEJ48段艺璇】第五届总选3月日常集资2.0
+      # https://zhongchou.modian.com/item/12531.html
+      - 12531
     irrelevant_project_ids:
 
   # https://me.modian.com/user?type=index&id=1180540
