@@ -127,6 +127,13 @@ def compare(report1, report2):
     print(report, end='')
 
 
+def list_timestamps():
+    timestamps = sorted(int(path.stem) for path in config.datadir().joinpath('reports/json').glob('*.json'))
+    for timestamp in timestamps:
+        dt = arrow.get(timestamp / 1000).to('Asia/Shanghai').replace(microsecond=0)
+        print(f'{timestamp}\t{dt.isoformat()}')
+
+
 def newprojects_handler(args):
     fetch_new_projects()
 
@@ -158,6 +165,10 @@ def compare_handler(args):
     compare(reports[-2], reports[-1])
 
 
+def list_handler(args):
+    list_timestamps()
+
+
 def main():
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers()
@@ -170,6 +181,9 @@ def main():
 
     parser_compare = subparsers.add_parser('compare', help='compare data at two different points in time')
     parser_compare.set_defaults(handler=compare_handler)
+
+    parser_list = subparsers.add_parser('list', help='list timestamps of existing reports')
+    parser_list.set_defaults(handler=list_handler)
 
     args = parser.parse_args()
 
