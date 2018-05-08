@@ -52,7 +52,7 @@ def fetch_new_projects():
                 print(account.name)
                 print()
                 for project in new_projects:
-                    print(textwrap.indent(str(project), '  '))
+                    print(textwrap.indent(project.confstr(), '      '))
 
 
 
@@ -79,8 +79,11 @@ def crawl_projects():
     ]
 
 
-_REPORT_TEMPLATE = jinja2.Template('''\
-统计时间: {{ datetime.replace(microsecond=0).strftime('%Y-%m-%d %H:%M:%S') }}
+_TEXT_REPORT_TEMPLATE = jinja2.Template('''\
+五选神七之争 摩点、Owhat集资统计
+
+统计：@我就是来抢莫莫沙发的
+统计截止时间: {{ datetime.replace(microsecond=0).strftime('%Y-%m-%d %H:%M:%S') }}
 
 {% for entry in data -%}
 {{ entry.faction }}
@@ -99,8 +102,29 @@ _REPORT_TEMPLATE = jinja2.Template('''\
 ''')
 
 
-def projects_report(datetime, data):
-    return _REPORT_TEMPLATE.render(datetime=datetime, data=data)
+_HTML_REPORT_TEMPLATE = jinja2.Template('''\
+<pre>
+<b>五选神七之争 摩点、Owhat集资统计</b>
+
+统计：@我就是来抢莫莫沙发的
+统计截止时间: {{ datetime.replace(microsecond=0).strftime('%Y-%m-%d %H:%M:%S') }}
+
+{% for entry in data -%}
+{{ entry.faction }}
+  总计: ￥{{ '%.2f'|format(entry.total) }}
+
+{%- for project in entry.projects %}
+
+  {{ project.__html__()|trim|indent(2) }}
+{%- endfor %}
+
+{% endfor -%}
+<b>小结</b>
+{%- for entry in data %}
+{{ entry.faction }}\t<font color="blue">￥{{ '%.2f'|format(entry.total) }}</font>
+{%- endfor %}
+</pre>
+''')
 
 
 COMPARISON_REPORT_TEMPLATE = jinja2.Template('''\
@@ -147,17 +171,23 @@ def crawl_handler(args):
     reports_dir = config.datadir() / 'reports'
     json_reports_dir = reports_dir / 'json'
     text_reports_dir = reports_dir / 'text'
+    html_reports_dir = reports_dir / 'html'
     json_reports_dir.mkdir(exist_ok=True, parents=True)
     text_reports_dir.mkdir(exist_ok=True, parents=True)
+    html_reports_dir.mkdir(exist_ok=True, parents=True)
 
     utils.dump_json(collections.OrderedDict([('timestamp', timestamp_ms), ('data', data)]),
                     json_reports_dir / f'{timestamp_ms}.json')
 
-    report = projects_report(now, data)
+    text_report = _TEXT_REPORT_TEMPLATE.render(datetime=now, data=data)
     with open(text_reports_dir / f'{timestamp_ms}.txt', 'w', encoding='utf-8') as fp:
-        print(report, file=fp)
+        print(text_report, file=fp)
 
-    print(report)
+    html_report = _HTML_REPORT_TEMPLATE.render(datetime=now, data=data)
+    with open(html_reports_dir / f'{timestamp_ms}.html', 'w', encoding='utf-8') as fp:
+        print(html_report, file=fp)
+
+    print(text_report)
 
 
 def compare_handler(args):

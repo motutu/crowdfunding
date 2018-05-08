@@ -1,5 +1,6 @@
 import json
 import re
+import time
 import urllib.parse
 
 import arrow
@@ -22,8 +23,18 @@ def get(endpoint, params, *, logpath=None):
     params = params.copy()
     params['jsonpcallback'] = ''
     url = urllib.parse.urljoin(APIBASE, endpoint)
-    logger.info('GET %s?%s', url, urllib.parse.urlencode(params))
-    r = requests.get(url, params=params)
+    ntries = 4
+    for ntry in range(ntries):
+        try:
+            full_url = '%s?%s' % (url, urllib.parse.urlencode(params))
+            logger.info('GET %s', full_url)
+            r = requests.get(url, params=params, timeout=5)
+            break
+        except (OSError, requests.RequestException) as e:
+            logger.error('GET %s: %s: %s', full_url, type(e), e)
+            time.sleep(2 ** ntry)
+    else:
+        raise RuntimeError('GET %s: failed after %d tries', full_url, ntries)
     assert r.status_code == 200
     m = re.match(r'^window\[decodeURIComponent\(\'\'\)\]\(\[(?P<json>.*)\]\);$', r.text)
     assert m

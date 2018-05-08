@@ -27,7 +27,7 @@ def post(cmd_m, cmd_s, data, *, logpath=None):
         v='1.0',
     )
     logger.info(f'POST {APIBASE} {urllib.parse.urlencode(payload)}')
-    r = requests.post(APIBASE, data=payload)
+    r = requests.post(APIBASE, data=payload, timeout=5)
     assert r.status_code == 200
     obj = r.json()
     if logpath:
